@@ -1,0 +1,148 @@
+/* Variables */
+
+:root {
+    --light-gray: #E6E6E6;
+    --dark-gray: #C4C4C4;
+    --blue: #005677;
+    --black: #000000;
+    --white: #FFFFFF;
+}
+
+
+/* General Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* Header Styles */
+
+.header {
+    height: 189px;
+    background-color: var(--light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Main Styles */
+
+.main__title {
+    padding: 14px 0px;
+    color: var(--blue);
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    text-align: center;
+    background-color: var(--dark-gray);
+}
+
+.container {
+    width: 90%;
+    margin: 40px auto;
+}
+
+.cv-section__title {
+    padding: 3px 8px;
+    color: var(--blue);
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    background-color: var(--dark-gray);
+}
+
+.cv-section__list-items {
+    padding: 15px 50px;
+}
+
+.cv-section__list-item {
+    margin: 5px 0px;
+}
+
+.cv-section__items {
+    padding: 15px 50px;
+}
+
+.cv-section__item {
+    margin: 15px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cv-section__date {
+    margin-right: 5px;
+}
+
+.cv-section__data {
+    font-weight: bold;
+}
+
+.cv-section__data--italic {
+    font-style: italic;   
+}
+
+
+/* Footer Styles */
+
+.footer {
+    height: 37px;
+    color: var(--white);
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__info {
+    font-size: 2rem;
+}
+
+.footer__socials {
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.footer__social-icon {
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+
+/* Media Querys */
+
+@media screen and (min-width: 576px) {
+
+    .main__title {
+        font-size: 3.5rem;
+    }
+
+    .cv-section__title {
+        font-size: 2rem;
+    }
+
+    .container {
+        width: 80%;
+        margin: 90px auto;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+
+    .cv-section__item {
+        flex-direction: row;
+    }
+
+}
