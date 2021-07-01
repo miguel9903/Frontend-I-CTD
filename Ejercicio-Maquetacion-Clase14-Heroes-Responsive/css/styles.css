@@ -1,0 +1,211 @@
+/* Variables */
+
+:root {
+    --orange: #D1891C;
+    --dark-blue: #00669F;
+    --white: #ffffff;
+    --light-gray: #F3F3F3;
+    --light-black: #333333;
+    --shadow-gray: rgba(0, 0, 0, 0.25);
+}
+
+
+/* Ganeral Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Header Styles */
+
+.header,
+.main,
+.footer { 
+    min-width: 320px;
+}
+
+.header__discounts {
+    padding: 10px;
+    font-size: 1.5rem;
+    background-color: var(--orange);
+}
+
+.header__title {
+    padding: 28px;
+    font-size: 4rem;
+    color: var(--white);
+    background-color: var(--dark-blue);
+    box-shadow: 0px 10px 7px var(--shadow-gray);
+    text-align: center;
+}
+
+
+/* Hero Cards Styles */
+
+.hero-cards {
+    width: 90%;
+    max-width: 960px;
+    height: auto;
+    margin: 60px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hero-card {
+    margin: 20px 5px;
+    max-width: 300px;
+    min-height: 529px;
+    box-shadow: 0px 4px 4px var(--shadow-gray);
+}
+
+.hero-card__header {
+    height: 193px;
+    position: relative;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.hero-card__background {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.hero-card__heart-icon {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    transition: all 300ms;
+}
+
+.hero-card__heart-icon:hover {
+    transform: scale(1.1);
+    text-shadow: 1px 1px ;
+}
+
+.hero-card__body { 
+    min-height: 336px;
+    padding: 50px 13px 18px;
+    color: var(--light-black);
+    background-color: var(--light-gray);
+    position: relative;
+}
+
+.hero-card__picture {
+    width: 122px;
+    height: 122px;
+    border-radius: 50%;
+    position: absolute;
+    top: -68px;
+    left: calc(50% - 61px);
+    box-shadow: 0px 4px 4px var(--shadow-gray);
+    transition: all 300ms;
+}
+
+.hero-card__picture:hover {
+    transform: scale(1.1);
+    border: 1px solid var(--dark-blue);
+}
+
+.hero-card__title {
+    margin-bottom: 10px;
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.hero-card__title--uppercase {
+    text-transform: uppercase;
+}
+
+.hero-card__description {
+    padding: 5px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.hero-card__button {
+    width: 128px;
+    padding: 15px 37px;
+    color: var(--white);
+    background-color: var(--dark-blue);
+    border: none;
+    display: block;
+    margin: 10px auto;
+}
+
+.hero-card__button:hover {
+    background-color: #5DADE2;
+}
+
+
+/* Footer Styles */
+
+.footer {
+    padding: 20px;
+    color: var(--white);
+    background-color: var(--dark-blue);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__copyright {
+    padding-bottom: 20px;
+}
+
+.github-logo {
+    display: inline-block;
+    width: 100px;
+}
+
+.github-image {
+    width: 100%;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 576px) {
+
+    .header__title {
+        text-align: left;
+    }
+
+    .hero-cards {
+        margin: 120px auto;
+    }
+
+    .footer {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer__copyright {
+        padding: 0;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .hero-cards {
+        justify-content: space-evenly;
+    }
+
+}
+
