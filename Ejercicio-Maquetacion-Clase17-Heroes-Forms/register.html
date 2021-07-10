@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <link rel="stylesheet" href="./css/forms.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__discounts">
+            <span>20% de descuento en todos los productos!</span>
+        </div>
+        <div class="header-banner">
+            <a href="./index.html">
+                <img class="header-banner__logo" src="./assets/img/shop-logo.png" alt="Shop Logo">
+            </a>
+            <h1 class="header-banner__title">Nombre Tienda</h1>
+        </div>
+        <nav class="main-nav">
+            <ul class="main-menu">
+                <li class="main-menu__item">
+                    <a href="./contact.html" class="main-menu__link">Contacto</a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="./register.html" class="main-menu__link">Registrarme</a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="./login.html" class="main-menu__link">Ingresar</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <form class="form">
+            <h2 class="form__title">Registro</h2>
+            <div class="form__field">
+                <input type="text" class="form__input" placeholder="Nombre y Apellido">
+            </div>
+            <div class="form__field">
+                <input type="email" class="form__input" placeholder="Correo electrónico">
+            </div>
+            <div class="form__field">
+                <input type="password" class="form__input" placeholder="Contraseña">
+            </div>
+            <div class="form__field">
+                <select id="countries-select" class="form__select">
+                    <option value="">Pais</option>
+                </select>
+            </div>
+            <div class="form__buttons">
+                <button class="form__button form__button--reset">Resetear</button>
+                <button class="form__button form__button--action">Entrar</button>
+            </div>
+            <div class="form__links">
+                <a class="form__link" href="./login.html">¿Ya tenés una cuenta?</a> 
+                Ingresá
+            </div>
+        </form>
+    </main>
+    <footer class="footer">
+        <span class="footer__text">Todos los derechos reservados a FRONT END 1</span>
+    </footer>
+    <script src="./js/register.js"></script>
+</body>
+</html>
