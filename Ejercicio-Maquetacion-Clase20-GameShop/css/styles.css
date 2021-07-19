@@ -102,7 +102,7 @@ body {
 .banner {
     height: 512px;
     padding: 0;
-    background-image: url('/assets/img/banner.png');
+    background-image: url('../assets/img/banner.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
@@ -261,11 +261,11 @@ body {
 }
 
 .star-game--chair {
-    background-image: url('/assets/img/featured-product1.png');
+    background-image: url('../assets/img/featured-product-1.png');
 }
 
 .star-game--computer {
-    background-image: url('/assets/img/featured-product2.png');
+    background-image: url('../assets/img/featured-product-2.png');
 }
 
 .star-game {
