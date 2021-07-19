@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameShop</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesomwe CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="./assets/img/joystick.png" type="image/png">
+</head>
+<body>
+    <header class="header">
+        <nav class="main-nav">
+            <div class="main-nav__logo">
+                <img src="./assets/img/logo.png" class="main-nav__logo-picture" alt="Logo">
+                <i class="fas fa-bars main-nav__hamburguer-icon"></i>
+            </div>
+            <ul class="main-menu">
+                <li class="main-menu__item">
+                    <a href="#" class="main-menu__link">Categorías</a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="#" class="main-menu__link">Ofertas</a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="#" class="main-menu__link">Moda</a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="#" class="main-menu__link">Favoritos</a>
+                </li>
+                <li class="main-menu__item main-menu__item--cart">
+                    <i class="fas fa-shopping-cart main-nav__cart-icon"></i>
+                </li>
+            </ul>
+        </nav>
+        <section class="banner">
+            <div class="banner__content">
+                <h1 class="banner__title"><span class="highlighted-text">25%</span> de descuento en juegos de playstation 4</h1>
+                <a href="#" class="banner__button">Comprar</a>
+            </div>
+        </section>
+    </header>
+    <main class="main">
+        <section class="featuted-products">
+            <div class="container">
+                <h2 class="section-name">Productos Destacados</h2>
+                <div class="featured-games">
+                    <div class="featured-game">
+                        <div class="featured-game__header">
+                            <img src="./assets/img/ps4-game1.png" alt="Detroit Game" class="featured-game__image">
+                        </div>
+                        <div class="featured-game__body">
+                            <span class="featured-game__price">3200</span>
+                            <span class="featured-game__description">12 x $266,66 sin interés</span>
+                            <span class="featured-game__send">Envío gratis</span>
+                        </div>
+                    </div>
+                    <div class="featured-game">
+                        <div class="featured-game__header">
+                            <img src="./assets/img/ps4-game2.png" alt="FIFA 11 Game" class="featured-game__image">
+                        </div>
+                        <div class="featured-game__body">
+                            <span class="featured-game__price">3200</span>
+                            <span class="featured-game__description">12 x $266,66 sin interés</span>
+                            <span class="featured-game__send">Envío gratis</span>
+                        </div>
+                    </div>
+                    <div class="featured-game">
+                        <div class="featured-game__header">
+                            <img src="./assets/img/ps4-game3.png" alt="Mortal Kombat Game" class="featured-game__image">
+                        </div>
+                        <div class="featured-game__body">
+                            <span class="featured-game__price">3200</span>
+                            <span class="featured-game__description">12 x $266,66 sin interés</span>
+                            <span class="featured-game__send">Envío gratis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="star-products">
+            <div class="container">
+                <h2 class="section-name">Productos Destacados</h2>
+                <div class="star-games">
+                    <div class="star-game star-game--chair">
+                        <span class="star-game__title">Sillas Gamer</span>
+                    </div>
+                    <div class="star-game star-game--computer">
+                        <span class="star-game__title">Computadoras</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer"> 
+        <div class="footer__info">
+            <div class="footer__logo">
+                <img src="./assets/img/logo.png" class="footer__logo-picture" alt="Logo">
+            </div>
+            <div class="footer__socials">
+                <h3 class="footer__title">Redes sociales</h3>
+                <div class="footer__icons">
+                    <i class="fab fa-twitter footer__icon footer__icon--twitter"></i>
+                    <i class="fab fa-facebook-f footer__icon footer__icon--facebook"></i>
+                    <i class="fab fa-instagram footer__icon footer__icon--instagram"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <small>Todos los derechos reservados a FrontEnd</small>
+        </div>
+    </footer>
+    <script src="./js/scripts.js"></script>
+</body>
+</html>

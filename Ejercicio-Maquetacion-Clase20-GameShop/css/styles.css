@@ -1,0 +1,434 @@
+/* Variables */
+
+:root {
+    --black: #222222;
+    --red: #D01418;
+    --gray: #F3F3F3;
+    --white: #FFFFFF;
+}
+
+
+/* General Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header,
+.main,
+.footer {
+    min-width: 320px;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+/* Main Nav Styles */
+
+.main-nav {
+    min-height: auto;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-nav__logo {
+    padding: 10px;
+    position: relative;
+}
+
+.main-menu {
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+    font-size: 1.4rem;
+    display: none;
+    opacity: 0;
+}
+
+.main-menu__item {
+    padding: 10px 15px;
+}
+
+.main-menu__item--cart {
+    padding: 10px 20px;
+}
+
+.main-menu__link {
+    text-decoration: none;
+    color: var(--gray);
+}
+
+.main-nav__hamburguer-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    color: var(--white);
+    position: absolute;
+    top: calc(50% - 8px);
+    right: 20px;
+}
+
+.main-nav__hamburguer-icon:hover {
+    color: var(--red);
+}
+
+.main-nav__cart-icon {
+    color: var(--red);
+}
+
+
+/* Banner Styles */
+
+.banner {
+    height: 512px;
+    padding: 0;
+    background-image: url('/assets/img/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    animation: blink 5s infinite linear;
+}
+
+.banner__content {
+    padding: 10px;
+    color: var(--white);
+    text-align: center;
+}
+
+.highlighted-text {
+    color: var(--red);
+}
+
+.banner__title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 3.5rem;
+}
+
+.banner__button {
+    display: inline-block;
+    padding: 10px 40px;
+    color: inherit;
+    font-size: 1.6rem;
+    text-decoration: none;
+    background-color: var(--red);
+}
+
+.banner__button:hover {
+    background-color: rgba(208, 20, 24, 0.6);
+}
+
+
+/* Show Menu Animation */
+
+@keyframes showMenu {
+    
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+.main-menu--active {
+    display: flex;
+    flex-direction: column;
+    animation: showMenu 0.5s ease-in-out both;
+}
+
+/* Banner Animation */
+
+@keyframes blink {
+    0% {
+        box-shadow: 0px 0px 10px#2874A6 inset;
+    }
+    25% {
+        box-shadow: 0px 0px 10px #5499C7 inset;
+    }
+    50% {
+        box-shadow: 0px 0px 10px #BB8FCE inset;
+    }
+    75% {
+        box-shadow: 0px 0px 10px#8E44AD inset;
+    }
+    100% {
+        box-shadow: 0px 0px 10px #5B2C6F inset;
+    }
+}
+
+
+/* Featured Products Styles */
+
+.main {
+    background-color: var(--gray);
+}
+
+.featuted-products,
+.star-products  {
+    padding: 40px 0px;
+}
+
+.featured-games,
+.star-games {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.featured-game {
+    width: 265px;
+    margin: 10px;
+    height: 322px;
+    background-color: var(--white);
+    border-radius: 5px;
+}
+
+.featured-game__header {
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #E5E7E9;
+}
+
+.featured-game__body {
+    padding: 20px;
+}
+
+.featured-game__price,
+.featured-game__description,
+.featured-game__send {
+    display: block;
+}
+
+.featured-game__price {
+    font-size: 2rem;
+}
+
+.featured-game__price::before {
+    content: '$';
+}
+
+.featured-game__description {
+    font-size: 1.3rem;
+}
+
+.featured-game__send {
+    font-size: 1rem;
+    color: #619D00;
+}
+
+.section-name {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+/* Star Products Styles */
+
+.star-products {
+    padding-bottom: 80px;
+}
+
+.star-game--chair {
+    background-image: url('/assets/img/featured-product1.png');
+}
+
+.star-game--computer {
+    background-image: url('/assets/img/featured-product2.png');
+}
+
+.star-game {
+    width: 100%;
+    max-width: 361px;
+    height: 135px;
+    margin: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    position: relative;
+}
+
+.star-game__title {
+    color: var(--white);
+    font-size: 2.5rem;
+    line-height: 20px;
+    position: absolute;
+    top: calc(50% - 10px);
+    right: 10px;
+}
+
+
+/* Footer Styles */
+
+.footer__info {
+    min-height: 216px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__logo {
+    margin-bottom: 20px;
+}
+
+.footer__socials {
+    color: var(--white);
+}
+
+.footer__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.footer__icons {
+    width: 100%;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__icon {
+    padding: 8px;
+}
+
+.footer__icon--twitter {
+    color: #14AED0;
+}
+
+.footer__icon--facebook {
+    color: #1476D0;
+}
+
+.footer__icon--instagram {
+    color: #CE0CFF;   
+}
+
+.footer__copyright {
+    text-align: center;
+    background-color: #C4C4C4;
+    padding: 5px;
+}
+
+
+/* Media Queries */
+
+ @media screen and (min-width: 540px) {
+
+    .container {
+        width: 90%;
+    }
+    
+    .banner {
+        background-position: center;
+    }
+
+    .banner__title {
+        font-size: 4rem;
+    }
+
+    .banner__button {
+        font-size: 1.8rem;
+    }
+
+ }
+
+ @media screen and (min-width: 720px) {
+
+    .container {
+        width: 85%;
+        margin: 0 auto;
+    }
+         
+    .main-nav__logo {
+        padding: 0;
+    }
+
+    .main-nav {
+        min-height: 100px;
+        padding-left: 20px;
+        padding-right: 10px;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .main-menu {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        opacity: 1;
+    }
+
+    .main-menu__item,
+    .main-menu__item--cart {
+        padding: 10px 15px;
+    }
+
+    .main-menu__item:hover {
+        background-color: rgba(229, 231, 233, 0.2);
+    }
+    
+    .main-nav__hamburguer-icon {
+        display: none;
+    }
+
+    .featured-games,
+    .star-games {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .footer__info {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .footer__logo {
+        margin-bottom: 0;
+    }
+
+}
+
+@media screen and (min-width: 960px) {
+     
+    .container {
+        width: 80%;
+    }
+    
+}
